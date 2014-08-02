@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3590DD59198D91B900119A56 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD58198D91B900119A56 /* myo.framework */; };
-		3590DD5B198D91CD00119A56 /* hello-myo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3590DD5A198D91CD00119A56 /* hello-myo.cpp */; };
 		3590DD5C198D924600119A56 /* myo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3590DD58198D91B900119A56 /* myo.framework */; };
+		EFE2C71C198D9EE20058AD97 /* hello-myo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFE2C71B198D9EE20058AD97 /* hello-myo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		3590DD49198D914B00119A56 /* ychacks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ychacks; sourceTree = BUILT_PRODUCTS_DIR; };
 		3590DD58198D91B900119A56 /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = myo.framework; sourceTree = "<group>"; };
-		3590DD5A198D91CD00119A56 /* hello-myo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "hello-myo.cpp"; path = "../hello-myo.cpp"; sourceTree = "<group>"; };
+		EFE2C71B198D9EE20058AD97 /* hello-myo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "hello-myo.cpp"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 		3590DD4B198D914B00119A56 /* ychacks */ = {
 			isa = PBXGroup;
 			children = (
-				3590DD5A198D91CD00119A56 /* hello-myo.cpp */,
+				EFE2C71B198D9EE20058AD97 /* hello-myo.cpp */,
 			);
 			path = ychacks;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3590DD5B198D91CD00119A56 /* hello-myo.cpp in Sources */,
+				EFE2C71C198D9EE20058AD97 /* hello-myo.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +246,7 @@
 				3590DD52198D914B00119A56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
