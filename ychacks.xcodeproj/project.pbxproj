@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		3590DD59198D91B900119A56 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD58198D91B900119A56 /* myo.framework */; };
 		3590DD5C198D924600119A56 /* myo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3590DD58198D91B900119A56 /* myo.framework */; };
-		EFE2C71C198D9EE20058AD97 /* hello-myo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFE2C71B198D9EE20058AD97 /* hello-myo.cpp */; };
+		3590DD5F198DAE1F00119A56 /* libportaudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD5E198DAE1F00119A56 /* libportaudio.a */; };
+		3590DD64198DAFA100119A56 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD63198DAFA100119A56 /* CoreAudio.framework */; };
+		3590DD66198DAFAA00119A56 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD65198DAFAA00119A56 /* AudioToolbox.framework */; };
+		3590DD68198DAFB100119A56 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD67198DAFB100119A56 /* AudioUnit.framework */; };
+		3590DD6A198DAFB800119A56 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD69198DAFB800119A56 /* CoreServices.framework */; };
+		3590DD6C198DAFBF00119A56 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD6B198DAFBE00119A56 /* Carbon.framework */; };
+		3590DD6E198DAFFF00119A56 /* hello-myo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFE2C71B198D9EE20058AD97 /* hello-myo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +34,13 @@
 /* Begin PBXFileReference section */
 		3590DD49198D914B00119A56 /* ychacks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ychacks; sourceTree = BUILT_PRODUCTS_DIR; };
 		3590DD58198D91B900119A56 /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = myo.framework; sourceTree = "<group>"; };
+		3590DD5E198DAE1F00119A56 /* libportaudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libportaudio.a; sourceTree = "<group>"; };
+		3590DD62198DAF7B00119A56 /* portaudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portaudio.h; sourceTree = "<group>"; };
+		3590DD63198DAFA100119A56 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		3590DD65198DAFAA00119A56 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3590DD67198DAFB100119A56 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		3590DD69198DAFB800119A56 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		3590DD6B198DAFBE00119A56 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		EFE2C71B198D9EE20058AD97 /* hello-myo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "hello-myo.cpp"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -36,7 +49,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3590DD6C198DAFBF00119A56 /* Carbon.framework in Frameworks */,
+				3590DD6A198DAFB800119A56 /* CoreServices.framework in Frameworks */,
+				3590DD68198DAFB100119A56 /* AudioUnit.framework in Frameworks */,
+				3590DD66198DAFAA00119A56 /* AudioToolbox.framework in Frameworks */,
+				3590DD64198DAFA100119A56 /* CoreAudio.framework in Frameworks */,
 				3590DD59198D91B900119A56 /* myo.framework in Frameworks */,
+				3590DD5F198DAE1F00119A56 /* libportaudio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +67,7 @@
 			children = (
 				3590DD4B198D914B00119A56 /* ychacks */,
 				3590DD4A198D914B00119A56 /* Products */,
-				3590DD58198D91B900119A56 /* myo.framework */,
+				3590DD6D198DAFE300119A56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +85,21 @@
 				EFE2C71B198D9EE20058AD97 /* hello-myo.cpp */,
 			);
 			path = ychacks;
+			sourceTree = "<group>";
+		};
+		3590DD6D198DAFE300119A56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3590DD62198DAF7B00119A56 /* portaudio.h */,
+				3590DD5E198DAE1F00119A56 /* libportaudio.a */,
+				3590DD6B198DAFBE00119A56 /* Carbon.framework */,
+				3590DD69198DAFB800119A56 /* CoreServices.framework */,
+				3590DD67198DAFB100119A56 /* AudioUnit.framework */,
+				3590DD65198DAFAA00119A56 /* AudioToolbox.framework */,
+				3590DD63198DAFA100119A56 /* CoreAudio.framework */,
+				3590DD58198D91B900119A56 /* myo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFE2C71C198D9EE20058AD97 /* hello-myo.cpp in Sources */,
+				3590DD6E198DAFFF00119A56 /* hello-myo.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +246,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -220,6 +258,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
