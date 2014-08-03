@@ -16,6 +16,15 @@
 		3590DD6A198DAFB800119A56 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD69198DAFB800119A56 /* CoreServices.framework */; };
 		3590DD6C198DAFBF00119A56 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD6B198DAFBE00119A56 /* Carbon.framework */; };
 		3590DD6E198DAFFF00119A56 /* hello-myo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFE2C71B198D9EE20058AD97 /* hello-myo.cpp */; };
+		3590DD7F198DB39B00119A56 /* pinky-test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3590DD6F198DB1C500119A56 /* pinky-test.cpp */; };
+		3590DD81198DB39B00119A56 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD6B198DAFBE00119A56 /* Carbon.framework */; };
+		3590DD82198DB39B00119A56 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD69198DAFB800119A56 /* CoreServices.framework */; };
+		3590DD83198DB39B00119A56 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD67198DAFB100119A56 /* AudioUnit.framework */; };
+		3590DD84198DB39B00119A56 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD65198DAFAA00119A56 /* AudioToolbox.framework */; };
+		3590DD85198DB39B00119A56 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD63198DAFA100119A56 /* CoreAudio.framework */; };
+		3590DD86198DB39B00119A56 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD58198D91B900119A56 /* myo.framework */; };
+		3590DD87198DB39B00119A56 /* libportaudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3590DD5E198DAE1F00119A56 /* libportaudio.a */; };
+		3590DD89198DB39B00119A56 /* myo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3590DD58198D91B900119A56 /* myo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +35,16 @@
 			dstSubfolderSpec = 16;
 			files = (
 				3590DD5C198D924600119A56 /* myo.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3590DD88198DB39B00119A56 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				3590DD89198DB39B00119A56 /* myo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +60,9 @@
 		3590DD67198DAFB100119A56 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		3590DD69198DAFB800119A56 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		3590DD6B198DAFBE00119A56 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		3590DD6F198DB1C500119A56 /* pinky-test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "pinky-test.cpp"; sourceTree = SOURCE_ROOT; };
+		3590DD77198DB37E00119A56 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3590DD8D198DB39B00119A56 /* ychacks copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ychacks copy"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE2C71B198D9EE20058AD97 /* hello-myo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "hello-myo.cpp"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -59,6 +81,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3590DD80198DB39B00119A56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3590DD81198DB39B00119A56 /* Carbon.framework in Frameworks */,
+				3590DD82198DB39B00119A56 /* CoreServices.framework in Frameworks */,
+				3590DD83198DB39B00119A56 /* AudioUnit.framework in Frameworks */,
+				3590DD84198DB39B00119A56 /* AudioToolbox.framework in Frameworks */,
+				3590DD85198DB39B00119A56 /* CoreAudio.framework in Frameworks */,
+				3590DD86198DB39B00119A56 /* myo.framework in Frameworks */,
+				3590DD87198DB39B00119A56 /* libportaudio.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				3590DD4B198D914B00119A56 /* ychacks */,
+				3590DD76198DB37E00119A56 /* playground */,
 				3590DD4A198D914B00119A56 /* Products */,
 				3590DD6D198DAFE300119A56 /* Frameworks */,
 			);
@@ -75,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				3590DD49198D914B00119A56 /* ychacks */,
+				3590DD8D198DB39B00119A56 /* ychacks copy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				EFE2C71B198D9EE20058AD97 /* hello-myo.cpp */,
+				3590DD6F198DB1C500119A56 /* pinky-test.cpp */,
 			);
 			path = ychacks;
 			sourceTree = "<group>";
@@ -100,6 +139,14 @@
 				3590DD58198D91B900119A56 /* myo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3590DD76198DB37E00119A56 /* playground */ = {
+			isa = PBXGroup;
+			children = (
+				3590DD77198DB37E00119A56 /* main.cpp */,
+			);
+			path = playground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +167,23 @@
 			name = ychacks;
 			productName = ychacks;
 			productReference = 3590DD49198D914B00119A56 /* ychacks */;
+			productType = "com.apple.product-type.tool";
+		};
+		3590DD7C198DB39B00119A56 /* playground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3590DD8A198DB39B00119A56 /* Build configuration list for PBXNativeTarget "playground" */;
+			buildPhases = (
+				3590DD7D198DB39B00119A56 /* Sources */,
+				3590DD80198DB39B00119A56 /* Frameworks */,
+				3590DD88198DB39B00119A56 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = playground;
+			productName = ychacks;
+			productReference = 3590DD8D198DB39B00119A56 /* ychacks copy */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -149,6 +213,7 @@
 			projectRoot = "";
 			targets = (
 				3590DD48198D914B00119A56 /* ychacks */,
+				3590DD7C198DB39B00119A56 /* playground */,
 			);
 		};
 /* End PBXProject section */
@@ -159,6 +224,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3590DD6E198DAFFF00119A56 /* hello-myo.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3590DD7D198DB39B00119A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3590DD7F198DB39B00119A56 /* pinky-test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +342,36 @@
 			};
 			name = Release;
 		};
+		3590DD8B198DB39B00119A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "ychacks copy";
+			};
+			name = Debug;
+		};
+		3590DD8C198DB39B00119A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "ychacks copy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -286,6 +389,15 @@
 			buildConfigurations = (
 				3590DD51198D914B00119A56 /* Debug */,
 				3590DD52198D914B00119A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3590DD8A198DB39B00119A56 /* Build configuration list for PBXNativeTarget "playground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3590DD8B198DB39B00119A56 /* Debug */,
+				3590DD8C198DB39B00119A56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

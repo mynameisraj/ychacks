@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>sound test.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>ychacks.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>3590DD48198D914B00119A56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3590DD74198DB37E00119A56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3590DD7C198DB39B00119A56</key>
 		<dict>
 			<key>primary</key>
 			<true/>
